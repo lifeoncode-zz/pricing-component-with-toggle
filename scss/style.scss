@@ -24,9 +24,19 @@ body {
 header {
     padding: 40px 0;
     text-align: center;
+    color: $Dark-Grayish-Blue;
+
+    h1 {
+        font-size: 30px;
+        margin-bottom: 15px
+    }
 
     .options {
         @include flex();
+
+        span {
+            font-size: 14px;
+        }
 
         .toggle {
             background: linear-gradient($Linear-Gradient-a,$Linear-Gradient-b);
@@ -60,6 +70,10 @@ main {
     .container {
         @include grid(repeat(3, 1fr), 0px);
         text-align: center;
+
+        @media only screen and (max-width: 750px) {
+            display: block;
+        }
     }
 
     .card {
@@ -86,6 +100,14 @@ main {
                     color: $Very-Light-Grayish-Blue;
                 }
             }
+
+            @media only screen and (max-width: 750px) {
+                padding: 30px 60px;
+            }
+
+            @media only screen and (max-width: 550px) {
+                padding: 30px;
+            }
         }
 
         h2 {
@@ -99,6 +121,14 @@ main {
 
             &.show {
                 display: inline-block;
+            }
+
+            @media only screen and (max-width: 880px) {
+                font-size: 30px;
+            }
+
+            @media only screen and (max-width: 550px) {
+                font-size: 40px;
             }
         }
 
@@ -120,6 +150,20 @@ main {
                 border: 1px solid $Linear-Gradient-b;
             }
         }
+
+        @media only screen and (max-width: 880px) {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        @media only screen and (max-width: 750px) {
+            padding: 30px 60px;
+            margin-bottom: 30px;
+        }
+
+        @media only screen and (max-width: 550px) {
+            padding: 30px;
+        }
     }
 
     ul {
@@ -128,6 +172,7 @@ main {
         border-top: 1px solid $Linear-Gradient-a;
 
         li {
+            font-size: 14px;
             padding: 15px 0;
             border-bottom: 1px solid $Linear-Gradient-a;
         }

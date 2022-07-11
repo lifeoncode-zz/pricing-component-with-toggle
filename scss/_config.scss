@@ -8,6 +8,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 // colors
 $Linear-Gradient-a: hsl(236, 72%, 79%);
 $Linear-Gradient-b: hsl(237, 63%, 64%);
@@ -34,4 +38,16 @@ $Dark-Grayish-Blue: hsl(232, 13%, 33%);
 .container {
     max-width: 1000px;
     margin: 0 auto;
+
+    @media only screen and (max-width: 1030px) {
+        max-width: 95%;
+    }
+
+    @media only screen and (max-width: 750px) {
+        max-width: 80%;
+    }
+
+    @media only screen and (max-width: 500px) {
+        max-width: 95%;
+    }
 }
