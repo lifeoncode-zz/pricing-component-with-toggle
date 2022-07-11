@@ -22,6 +22,7 @@ body {
 }
 
 header {
+    padding: 40px 0;
     text-align: center;
 
     .options {
@@ -47,6 +48,88 @@ header {
                     margin-left: 20px;
                 }
             }
+        }
+    }
+}
+
+main {
+    padding: 20px 0;
+    position: relative;
+    z-index: 2;
+
+    .container {
+        @include grid(repeat(3, 1fr), 0px);
+        text-align: center;
+    }
+
+    .card {
+        border-radius: 10px;
+        padding: 30px;
+        align-self: center;
+        background-color: #fff;
+        color: $Dark-Grayish-Blue;
+        box-shadow: 2px 2px 16px rgba(33, 43, 67, 0.153);
+
+        &.professional {
+            padding: 60px 30px;
+            box-shadow: 0;
+            background: linear-gradient($Linear-Gradient-a,$Linear-Gradient-b);
+            color: $Very-Light-Grayish-Blue;
+
+            a {
+                background: $Very-Light-Grayish-Blue;
+                border: 1px solid $Very-Light-Grayish-Blue;
+                color: $Linear-Gradient-b;
+
+                &:hover {
+                    border: 1px solid $Very-Light-Grayish-Blue;
+                    color: $Very-Light-Grayish-Blue;
+                }
+            }
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .price {
+            font-size: 50px;
+            display: none;
+
+            &.show {
+                display: inline-block;
+            }
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            text-transform: uppercase;
+            padding: 12px;
+            font-size: 14px;
+            background: linear-gradient($Linear-Gradient-a,$Linear-Gradient-b);
+            color: $Very-Light-Grayish-Blue;
+            border: 1px solid $Very-Light-Grayish-Blue;
+            border-radius: 5px;
+            transition: all 0.5s ease;
+
+            &:hover {
+                background: transparent;
+                color: $Linear-Gradient-b;
+                border: 1px solid $Linear-Gradient-b;
+            }
+        }
+    }
+
+    ul {
+        list-style: none;
+        margin: 30px 0;
+        border-top: 1px solid $Linear-Gradient-a;
+
+        li {
+            padding: 15px 0;
+            border-bottom: 1px solid $Linear-Gradient-a;
         }
     }
 }

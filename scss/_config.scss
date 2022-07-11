@@ -30,3 +30,8 @@ $Dark-Grayish-Blue: hsl(232, 13%, 33%);
     grid-template-columns: $columns;
     grid-gap: $gap;
 }
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
