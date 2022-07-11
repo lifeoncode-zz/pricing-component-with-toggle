@@ -1,0 +1,52 @@
+@import './config';
+
+body {
+    position: relative;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: $Very-Light-Grayish-Blue;
+}
+
+.bg-image {
+    position: absolute;
+    width: 20%;
+
+    &.bg-top {
+        top: 0;
+        right: 0;
+    }
+    &.bg-bottom {
+        bottom: 0;
+        left: 0;
+    }
+}
+
+header {
+    text-align: center;
+
+    .options {
+        @include flex();
+
+        .toggle {
+            background: linear-gradient($Linear-Gradient-a,$Linear-Gradient-b);
+            padding: 5px;
+            border-radius: 50px;
+            position: relative;
+            width: 50px;
+            margin: 0 20px;
+
+            .btn {
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                background-color: #fff;
+                cursor: pointer;
+                transition: all 0.3s ease;
+
+                &.move-right {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}

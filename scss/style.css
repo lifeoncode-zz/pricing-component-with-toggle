@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  position: relative;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #f6f6fe;
+}
+
+.bg-image {
+  position: absolute;
+  width: 20%;
+}
+
+.bg-image.bg-top {
+  top: 0;
+  right: 0;
+}
+
+.bg-image.bg-bottom {
+  bottom: 0;
+  left: 0;
+}
+
+header {
+  text-align: center;
+}
+
+header .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header .options .toggle {
+  background: -webkit-gradient(linear, left top, left bottom, from(#a3a8f0), to(#696fdd));
+  background: linear-gradient(#a3a8f0, #696fdd);
+  padding: 5px;
+  border-radius: 50px;
+  position: relative;
+  width: 50px;
+  margin: 0 20px;
+}
+
+header .options .toggle .btn {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+header .options .toggle .btn.move-right {
+  margin-left: 20px;
+}
+/*# sourceMappingURL=style.css.map */

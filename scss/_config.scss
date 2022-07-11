@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+// reset browser css
+* {
+    box-sizing: border-box;
+    margin: 0;    
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+// colors
+$Linear-Gradient-a: hsl(236, 72%, 79%);
+$Linear-Gradient-b: hsl(237, 63%, 64%);
+$Very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+$Light-Grayish-Blue: hsl(234, 14%, 74%);
+$Grayish-Blue: hsl(233, 13%, 49%);
+$Dark-Grayish-Blue: hsl(232, 13%, 33%);
+
+// mixins
+@mixin flex($align:center, $justify:center, $direction:row, $wrap:wrap) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}
+
+@mixin grid($columns:1fr, $gap:20px) {
+    display: grid;
+    grid-template-columns: $columns;
+    grid-gap: $gap;
+}
